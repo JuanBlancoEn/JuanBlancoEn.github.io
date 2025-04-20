@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import CreateTeamPage from './pages/CreateTeamPage';
 import TeamDetailPage from './pages/TeamDetailPage';
 import Navbar from './components/Navbar';
+import ImportTeamPage from './pages/ImportTeamPage';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/create" element={<CreateTeamPage />} />
           <Route path="/team/:id" element={<TeamDetailPage />} />
+          <Route path="/import" element={<ImportTeamPage />} /> {/* Ruta para importar equipo */}
         </Routes>
       </div>
     </Router>

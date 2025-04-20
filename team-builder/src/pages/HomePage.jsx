@@ -11,6 +11,7 @@ function HomePage() {
           <Link to="/create" className="btn btn-primary btn-lg mt-3">
             Crear un nuevo equipo
           </Link>
+          <Link to="/import" className="btn btn-secondary mt-3 ml-3">Importar un equipo</Link> {/* Enlace para importar equipo */}
         </div>
       </div>
     </div>

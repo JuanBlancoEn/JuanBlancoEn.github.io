@@ -9,6 +9,9 @@ function Navbar() {
         <div className="navbar-nav">
           <Link to="/" className="nav-link">Inicio</Link>
           <Link to="/create" className="nav-link">Crear Equipo</Link>
+          <li className="nav-item">
+              <Link className="nav-link" to="/import">Importar Equipo</Link> {/* Enlace a la página de importar equipo */}
+            </li>
         </div>
       </div>
     </nav>
