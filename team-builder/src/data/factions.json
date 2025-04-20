@@ -1,0 +1,32 @@
+{
+    "Rebel Alliance": {
+      "ships": [
+        {
+          "name": "X-Wing",
+          "pilots": [
+            { "name": "Luke Skywalker", "points": 6 },
+            { "name": "Wedge Antilles", "points": 5 }
+          ]
+        },
+        {
+          "name": "Y-Wing",
+          "pilots": [
+            { "name": "Dutch Vander", "points": 4 },
+            { "name": "Horton Salm", "points": 4 }
+          ]
+        }
+      ]
+    },
+    "Galactic Empire": {
+      "ships": [
+        {
+          "name": "TIE Fighter",
+          "pilots": [
+            { "name": "Howlrunner", "points": 3 },
+            { "name": "Iden Versio", "points": 3 }
+          ]
+        }
+      ]
+    }
+  }
+  

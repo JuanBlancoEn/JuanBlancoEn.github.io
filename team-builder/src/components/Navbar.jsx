@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand navbar-light bg-light">
+    <nav className="navbar bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand">Team Builder</Link>
+        <Link to="/" className="navbar-brand">R2 X-Wing Builder</Link>
         <div className="navbar-nav">
           <Link to="/" className="nav-link">Inicio</Link>
           <Link to="/create" className="nav-link">Crear Equipo</Link>
