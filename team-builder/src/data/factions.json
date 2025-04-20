@@ -2,18 +2,215 @@
     "Rebel Alliance": {
       "ships": [
         {
-          "name": "X-Wing",
+          "name": "ARC-179",
           "pilots": [
-            { "name": "Luke Skywalker", "points": 6 },
-            { "name": "Wedge Antilles", "points": 5 }
+            { "name": "Braylen Stramm", "basePoints": 25, "optionalAbilities": [
+                {"name": "Munición adicional", "points": 2},
+                {"name": "Torpedos de Fragmentación", "points": 2},
+                {"name": "Torpedo sísmico", "points": 2},
+                {"name": "Torpedos de plasma", "points": 3},
+                {"name": "Torpedos de protones", "points": 4},
+                {"name": "Torpedos de iones", "points": 5},
+                {"name": "Torpedos de protones avanzados", "points": 6}
+            ] },
+            { "name": "Thane Kyrell", "basePoints": 26 },
+            { "name": "Shara Bey", "basePoints": 28 },
+            { "name": "Norra Wexley", "basePoints": 29 }
           ]
         },
         {
-          "name": "Y-Wing",
+          "name": "Ala-A",
           "pilots": [
-            { "name": "Dutch Vander", "points": 4 },
-            { "name": "Horton Salm", "points": 4 }
+            { "name": "Piloto de pruebas", "basePoints": 17 },
+            { "name": "Piloto del escuadrón Verde", "basePoints": 19 },
+            { "name": "Gemmer Sojan", "basePoints": 22 },
+            { "name": "Arvel Crynyd", "basePoints": 23 },
+            { "name": "Jake Farrel", "basePoints": 24 },
+            { "name": "Tycho Celchu", "basePoints": 26 }
           ]
+        },
+        {
+          "name": "Ala-B",
+          "pilots": [
+            { "name": "Piloto del escuadrón Azul", "basePoints": 22 },
+            { "name": "Piloto del escuadrón Daga", "basePoints": 24 },
+            { "name": "Nera Dantels", "basePoints": 26 },
+            { "name": "Ibtisam", "basePoints": 28 },
+            { "name": "Keyan Farlander", "basePoints": 29 },
+            { "name": "Ten Numb", "basePoints": 31 }
+          ]
+        },
+        {
+          "name": "Ala-E",
+          "pilots": [
+            { "name": "Piloto del escuadrón Canalla", "basePoints": 27 },
+            { "name": "Piloto del escuadrón Luna", "basePoints": 29 },
+            { "name": "Ethan A'baht", "basePoints": 32 },
+            { "name": "Corran Horn", "basePoints": 35 }
+          ]
+        },
+        {
+          "name": "Ala-K",
+          "pilots": [
+            { "name": "Piloto del escuadrón Custodio", "basePoints": 23 },
+            { "name": "Piloto del escuadrón Guardián", "basePoints": 25 },
+            { "name": "Esege Tuketu", "basePoints": 28 },
+            { "name": "Miranda Doni", "basePoints": 29 }
+          ]
+        },
+        {
+          "name": "Ala-U",
+          "pilots": [
+            { "name": "Insurgente de los Partisanos", "basePoints": 22 },
+            { "name": "Infiltrador del escuadrón Azul", "basePoints": 23 },
+            { "name": "Benthic Dos Tubos", "basePoints": 24 },
+            { "name": "Heff Tobber", "basePoints": 24 },
+            { "name": "Bodhi Rook", "basePoints": 25 },
+            { "name": "Magva Yarro", "basePoints": 25 },
+            { "name": "Saw Gerrera", "basePoints": 26 },
+            { "name": "Cassian Andor", "basePoints": 27 }
+          ]
+        },
+        {
+          "name": "Ala-X",
+          "pilots": [
+            { "name": "Piloto Novato", "basePoints": 21 },
+            { "name": "Fanático de los Ángeles Cavernarios", "basePoints": 22 },
+            { "name": "Piloto del escuadrón Rojo", "basePoints": 23 },
+            { "name": "Tarn Mison", "basePoints": 23 },
+            { "name": "Edrio Dos Tubos", "basePoints": 24 },
+            { "name": "Biggs Darklighter", "basePoints": 25 },
+            { "name": "Hobbie Klivian", "basePoints": 25 },
+            { "name": "Leevan Tenza", "basePoints": 25 },
+            { "name": "Garven Dreis", "basePoints": 26 },
+            { "name": "Jek Porkins", "basePoints": 26 },
+            { "name": "Kulbee Sperado", "basePoints": 26 },
+            { "name": "Luke Skywalker", "basePoints": 28 },
+            { "name": "Wedge Antilles", "basePoints": 29 },
+            { "name": "Wes Janson", "basePoints": 29 }
+          ]
+        },
+        {
+          "name": "Ala-Y",
+          "pilots": [
+            { "name": "Piloto del escuadrón Oro", "basePoints": 18 },
+            { "name": "Piloto del escuadrón Gris", "basePoints": 20 },
+            { "name": "Dutch Vander", "basePoints": 23 },
+            { "name": "Horton Salm", "basePoints": 25 }
+          ]
+        },
+        {
+          "name": "Bombardero B/SF-17",
+          "pilots": [
+            { "name": "Piloto del escuadrón Carmesí", "basePoints": 25 },
+            { "name": "Especialista Carmesí", "basePoints": 27 },
+            { "name": "Jefe Cobalto", "basePoints": 28 },
+            { "name": "Jefe Carmesí", "basePoints": 29 }
+          ]
+        },
+        {
+            "name": "Bombardero Scurrg H-6",
+            "pilots": [
+            { "name": "Capitám Nym (Rebelde)", "basePoints": 30 }
+          ]
+        },
+        {
+            "name": "Cañonera Auzituck",
+            "pilots": [
+             { "name": "Defensor Kashyyyk", "basePoints": 24 },
+             { "name": "Libertador wookie", "basePoints": 26 },
+             { "name": "Lowhhrick", "basePoints": 28 },
+             { "name": "Wullffwarro", "basePoints": 30 }
+            ]
+        },
+        {
+            "name": "Caza TIE",
+            "pilots": [
+             { "name": "Zeb Orrelios", "basePoints": 13 },
+             { "name": "Capitán Rex", "basePoints": 14 },
+             { "name": "Sabine Wren", "basePoints": 15 },
+             { "name": "Ahsoka Tano", "basePoints": 17 }
+              ]
+        },
+        {
+            "name": "HWK-290",
+            "pilots": [
+             { "name": "Agente Rebelde", "basePoints": 16 },
+             { "name": "Roark Garnet", "basePoints": 19 },
+             { "name": "Kyle Katarn", "basePoints": 21 },
+             { "name": "Jan Ors", "basePoints": 25 }
+                ]
+        },
+        {
+            "name": "Lanzadera clase Sheathipede",
+            "pilots": [
+                { "name": "AP-5", "basePoints": 15 },
+                { "name": "Zeb Orrelios", "basePoints": 16 },
+                { "name": "Ezra Bridger", "basePoints": 17 },
+                { "name": "Fenn Rau", "basePoints": 20 }
+                  ]
+        },
+        {
+            "name": "Lanzadera de Ataque",
+            "pilots": [
+                { "name": "Zeb Orrelios", "basePoints": 18 },
+                { "name": "Ezra Bridger", "basePoints": 20 },
+                { "name": "Sabine Wren", "basePoints": 21 },
+                { "name": "Hera Syndulla", "basePoints": 22 }
+                    ]
+        },
+        {
+            "name": "T-70 Ala-X",
+            "pilots": [
+                { "name": "Novato del escuadón Azul", "basePoints": 24 },
+                { "name": "Jess Pava", "basePoints": 25 },
+                { "name": "Veterano del escuadón Rojo", "basePoints": 26 },
+                { "name": "As Azul", "basePoints": 27 },
+                { "name": "Snap Wexley", "basePoints": 28 },
+                { "name": "As Rojo", "basePoints": 29 },
+                { "name": "Nien Nunb", "basePoints": 29 },
+                { "name": "Ello Asty", "basePoints": 30 }
+                      ]
+        },
+        {
+            "name": "VCX-100",
+            "pilots": [
+                { "name": "Rebelde de Lothal", "basePoints": 35 },
+                { "name": "Chopper", "basePoints": 37 },
+                { "name": "Kanan Jarrus", "basePoints": 38 },
+                { "name": "Hera Syndulla", "basePoints": 40 }
+                        ]
+        },
+        {
+            "name": "YT-1300",
+            "pilots": [
+                { "name": "Contrabandista del Borde Exterior", "basePoints": 27 },
+                { "name": "Simpatizante de la Resistencia", "basePoints": 38 },
+                { "name": "Chewbacca", "basePoints": 42 },
+                { "name": "Chewbacca (TFA)", "basePoints": 42 },
+                { "name": "Lando Calrissian", "basePoints": 44 },
+                { "name": "Rey", "basePoints": 45 },
+                { "name": "Han Solo", "basePoints": 46 },
+                { "name": "Han Solo (TFA)", "basePoints": 46 }
+                          ]
+        },
+        {
+            "name": "YT-2400",
+            "pilots": [
+                { "name": "Fronterizo del Espacio Salvaje", "basePoints": 30 },
+                { "name": "Eaden Vrill", "basePoints": 32 },
+                { "name": "Leebo", "basePoints": 34 },
+                { "name": "Dash Rendar", "basePoints": 36 }
+                            ]
+        },
+        {
+            "name": "Z-95 Cazacabezas",
+            "pilots": [
+                { "name": "Piloto del escuadrón Bandido", "basePoints": 12 },
+                { "name": "Piloto del escuadrón Tala", "basePoints": 13 },
+                { "name": "Teniente Blount", "basePoints": 17 },
+                { "name": "Airen Cracken", "basePoints": 19 }
+                              ]
         }
       ]
     },
@@ -22,8 +219,8 @@
         {
           "name": "TIE Fighter",
           "pilots": [
-            { "name": "Howlrunner", "points": 3 },
-            { "name": "Iden Versio", "points": 3 }
+            { "name": "Howlrunner", "basePoints": 3 },
+            { "name": "Iden Versio", "basePoints": 3 }
           ]
         }
       ]

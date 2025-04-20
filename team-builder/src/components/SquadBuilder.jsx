@@ -15,14 +15,25 @@ function SquadBuilder({ factionData, factionName, preloadedSquad = [] }) {
     }
   };
 
-  const addShip = (ship, pilot) => {
+  const addShip = (ship, pilot, selectedAbilities = []) => {
+    const basePoints = pilot.basePoints;
+    const abilityPoints = selectedAbilities.reduce((sum, name) => {
+      const ability = pilot.optionalAbilities.find(a => a.name === name);
+      return sum + (ability?.points || 0);
+    }, 0);
+    const totalPoints = basePoints + abilityPoints;
+  
     const newShip = {
-      id: Date.now(), // Asignar un ID único
+      id: Date.now(),
       name: ship.name,
       pilot: pilot.name,
-      points: pilot.points,
+      basePoints,
+      abilityPoints,
+      points: totalPoints,
+      abilities: selectedAbilities,
     };
-    setSquad([...squad, newShip]); // Añadir la nueva nave al escuadrón
+  
+    setSquad(prev => [...prev, newShip]);
   };
 
   const handleShare = () => {
