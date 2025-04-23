@@ -4,92 +4,7 @@
         {
           "name": "ARC-179",
           "pilots": [
-            { "name": "Braylen Stramm", "basePoints": 25, "optionalAbilities": [
-                {"name": "Munición adicional", "points": 2},
-                {"name": "Torpedos de fragmentación", "points": 2},
-                {"name": "Torpedo sísmico", "points": 2},
-                {"name": "Torpedos de plasma", "points": 3},
-                {"name": "Torpedos de protones", "points": 4},
-                {"name": "Torpedos de iones", "points": 5},
-                {"name": "Torpedos de protones avanzados", "points": 6},
-                {"name": "Astromecánico Chopper", "points": 1},
-                {"name": "Droide Astromecánico R2", "points": 1},
-                {"name": "Droide Astromecánico R5", "points": 1},
-                {"name": "Droide Astromecánico de ayuda al pilotaje", "points": 1},
-                {"name": "R2-D6", "points": 1},
-                {"name": "R4-D6", "points": 1},
-                {"name": "R5-X3", "points": 1},
-                {"name": "BB-8", "points": 2},
-                {"name": "Droide Astromecánico R7", "points": 2},
-                {"name": "Droide Astromecánico de seleccion de blancos", "points": 2},
-                {"name": "Droide Astromecánico R3", "points": 2},
-                {"name": "R3-A2", "points": 2},
-                {"name": "R5-K6", "points": 2},
-                {"name": "M9-G8", "points": 3},
-                {"name": "R2-F2", "points": 3},
-                {"name": "R5-D8", "points": 3},
-                {"name": "R5-P9", "points": 3},
-                {"name": "R7-T1", "points": 3},
-                {"name": "R2-D2", "points": 4},
-                {"name": "Chips de guiado", "points": 0},
-                {"name": "Camuflaje multiespectral", "points": 1},
-                {"name": "Sistema de munición a prueba de fallos", "points": 1},
-                {"name": "Acelerador de partículas estigio", "points": 2},
-                {"name": "Computadora de selección de blancos", "points": 2},
-                {"name": "Motor sublumínico avanzado", "points": 2},
-                {"name": "Propulsores vectoriales", "points": 2},
-                {"name": "Blindaje mejorado", "points": 3},
-                {"name": "Dispositivo de sigilo", "points": 3},
-                {"name": "RInterfaz experimental", "points": 3},
-                {"name": "Escudos mejorados", "points": 4},
-                {"name": "Motor mejorado", "points": 4},
-                {"name": "Chopper", "points": 0},
-                {"name": "Droide mensajero", "points": 0},
-                {"name": "Agente del servicio de inteligencia", "points": 1},
-                {"name": "Bodhi Rook", "points": 1},
-                {"name": "Bombardero", "points": 1},
-                {"name": "Especialista en brechas", "points": 1},
-                {"name": "Hera Syndulla", "points": 1},
-                {"name": "Nien Nunb", "points": 1},
-                {"name": "Recluta inspirador", "points": 1},
-                {"name": "Saw Gerrera", "points": 1},
-                {"name": "Artillero de cola", "points": 2},
-                {"name": "Bistan", "points": 2},
-                {"name": "BoShek", "points": 2},
-                {"name": "Capitán Rex", "points": 2},
-                {"name": "Cassian Andor", "points": 2},
-                {"name": "Copiloto mercenario", "points": 2},
-                {"name": "Dash Rendar", "points": 2},
-                {"name": "Estratega", "points": 2},
-                {"name": "Han Solo", "points": 2},
-                {"name": "Jan Ors", "points": 2},
-                {"name": "Jyn Erso", "points": 2},
-                {"name": "Leebo", "points": 2},
-                {"name": "Magva Yarro", "points": 2},
-                {"name": "Rey", "points": 2},
-                {"name": "Sabine Wren", "points": 2},
-                {"name": "Saboteador", "points": 2},
-                {"name": "Baze Malbus", "points": 3},
-                {"name": "C-3PO", "points": 3},
-                {"name": "Especialista en reconocimiento", "points": 3},
-                {"name": "Especialista en operaciones", "points": 3},
-                {"name": "Ezra Bridger", "points": 3},
-                {"name": "Ingeniero de Armamento", "points": 3},
-                {"name": "Kanan Jarrus", "points": 3},
-                {"name": "Kyle Katarn", "points": 3},
-                {"name": "Lando Calrissian", "points": 3},
-                {"name": "Oficial de navegación", "points": 3},
-                {"name": "Chewbacca", "points": 4},
-                {"name": "Copiloto extraordinario", "points": 4},
-                {"name": "Instructor de vuelo", "points": 4},
-                {"name": "Leia Organa", "points": 4},
-                {"name": "R2-D2", "points": 4},
-                {"name": "Coordinador de apuntado", "points": 4},
-                {"name": "Artillero", "points": 5},
-                {"name": "Finn", "points": 5},
-                {"name": "Luke Skywalker", "points": 7},
-                {"name": "Reacondicionado por la Alianza", "points": 0}
-            ] },
+            { "name": "Braylen Stramm", "basePoints": 25},
             { "name": "Thane Kyrell", "basePoints": 26 },
             { "name": "Shara Bey", "basePoints": 28 },
             { "name": "Norra Wexley", "basePoints": 29 }
@@ -294,10 +209,366 @@
     "Imperio Galáctico": {
       "ships": [
         {
-          "name": "TIE Fighter",
+          "name": "Ala Estelar clase Alfa",
           "pilots": [
-            { "name": "Howlrunner", "basePoints": 3 },
-            { "name": "Iden Versio", "basePoints": 3 }
+            { "name": "Piloto del escuadrón Nu", "basePoints": 18 },
+            { "name": "Veterano del escuadrón Rho", "basePoints": 21 },
+            { "name": "Teniente karsabi", "basePoints": 24 },
+            { "name": "Mayor Vynder", "basePoints": 26 }
+          ]
+        },
+        {
+          "name": "Bombardero TIE",
+          "pilots": [
+            { "name": "Piloto del escuadrón Cimitarra", "basePoints": 16 },
+            { "name": "Muerte Ígnea", "basePoints": 17 },
+            { "name": "Piloto del escuadrón Gamma", "basePoints": 18 },
+            { "name": "Veterano del escuadrón Gamma", "basePoints": 19 },
+            { "name": "Capitán Jonus", "basePoints": 22 },
+            { "name": "Tomax Brenn", "basePoints": 24 },
+            { "name": "Comandante Rhymer", "basePoints": 26 }
+          ]
+        },
+        {
+          "name": "Castigador TIE",
+          "pilots": [
+            { "name": "Piloto del escuadrón Alfange", "basePoints": 21 },
+            { "name": "Piloto del escuadrón Ocho Negro", "basePoints": 23 },
+            { "name": "Lluvia de Muerte", "basePoints": 26 },
+            { "name": "Velocidad Terminal", "basePoints": 27 }
+          ]
+        },
+        {
+          "name": "Caza TIE",
+          "pilots": [
+            { "name": "Piloto de la Academia", "basePoints": 12 },
+            { "name": "Piloto del escuadrón Obsidiana", "basePoints": 13 },
+            { "name": "Perseguidor", "basePoints": 14 },
+            { "name": "Piloto del escuadrón Negro", "basePoints": 14 },
+            { "name": "Wampa", "basePoints": 14 },
+            { "name": "Bestia Nocturna", "basePoints": 15 },
+            { "name": "Gundak Alado", "basePoints": 15 },
+            { "name": "Pipiolo", "basePoints": 15 },
+            { "name": "Asesino Furtivo", "basePoints": 16 },
+            { "name": "Maldición Oscura", "basePoints": 16 },
+            { "name": "Azote", "basePoints": 17 },
+            { "name": "Mutilador Mithel", "basePoints": 17 },
+            { "name": "Aullador Veloz", "basePoints": 18 }
+          ]
+        },
+        {
+          "name": "Caza TIE/fo",
+          "pilots": [
+            { "name": "Piloto del escuadrón Epsilon", "basePoints": 15 },
+            { "name": "Piloto del escuadrón Zeta", "basePoints": 16 },
+            { "name": "As Epsilon", "basePoints": 17 },
+            { "name": "Piloto del escuadrón Omega", "basePoints": 17 },
+            { "name": "As Zeta", "basePoints": 18 },
+            { "name": "Jefe Epsilon", "basePoints": 19 },
+            { "name": "As Omega", "basePoints": 20 },
+            { "name": "Jefe Zeta", "basePoints": 20 },
+            { "name": "Jefe Omega", "basePoints": 21 }
+          ]
+        },
+        {
+          "name": "Caza TIE/sf",
+          "pilots": [
+            { "name": "Especialista del escuadrón Zeta", "basePoints": 23 },
+            { "name": "Especialista del escuadrón Omega", "basePoints": 25 },
+            { "name": "Llamarada", "basePoints": 27 },
+            { "name": "Centella", "basePoints": 29 }
+          ]
+        },
+        {
+          "name": "Defensor TIE",
+          "pilots": [
+            { "name": "Piloto del escuadrón Delta", "basePoints": 30 },
+            { "name": "Piloto del escuadrón Ónice", "basePoints": 32 },
+            { "name": "Condesa Ryad", "basePoints": 34 },
+            { "name": "Piloto del escuadrón Guja", "basePoints": 34 },
+            { "name": "Coronel Vessery", "basePoints": 35 },
+            { "name": "Maarek Stele (Defensor TIE)", "basePoints": 35 },
+            { "name": "Rexler Brath", "basePoints": 37 }
+          ]
+        },
+        {
+          "name": "Firespray-31",
+          "pilots": [
+            { "name": "Cazarrecompensas", "basePoints": 33 },
+            { "name": "Krassis Trelix", "basePoints": 36 },
+            { "name": "Kath Scarlet", "basePoints": 38 },
+            { "name": "Boba Fett", "basePoints": 39 }
+          ]
+        },
+        {
+          "name": "Fustigador TIE",
+          "pilots": [
+            { "name": "Cadete Imperial", "basePoints": 17 },
+            { "name": "Defensor de Scarif", "basePoints": 18 },
+            { "name": "Cuenta Atrás", "basePoints": 20 },
+            { "name": "Explorador del escuadrón Negro", "basePoints": 20 },
+            { "name": "Sabak Puro", "basePoints": 22 },
+            { "name": "Duquesa", "basePoints": 23 }
+          ]
+        },
+        {
+          "name": "Interceptor TIE",
+          "pilots": [
+            { "name": "Piloto del escuadrón Alfa", "basePoints": 18 },
+            { "name": "Piloto del escuadrón Vengador", "basePoints": 20 },
+            { "name": "Piloto del escuadrón Sable", "basePoints": 21 },
+            { "name": "Piloto de la Guardia Real", "basePoints": 22 },
+            { "name": "Ira de Fel", "basePoints": 23 },
+            { "name": "Teniente Lorrir", "basePoints": 23 },
+            { "name": "Kir Kanos", "basePoints": 24 },
+            { "name": "Tetran Cowall", "basePoints": 24 },
+            { "name": "Turr Phennir", "basePoints": 25 },
+            { "name": "Carnor Jax", "basePoints": 26 },
+            { "name": "Soontir Fel", "basePoints": 27 }
+          ]
+        },
+        {
+          "name": "Lanzadera Clase Lambda",
+          "pilots": [
+            { "name": "Piloto del grupo Ómicron", "basePoints": 21 },
+            { "name": "Capitán Yorr", "basePoints": 24 },
+            { "name": "Coronel Jendon", "basePoints": 26 },
+            { "name": "Capitán Kagi", "basePoints": 27 }
+          ]
+        },
+        {
+          "name": "Lanzadera Clase Ípsilon",
+          "pilots": [
+            { "name": "Piloto de la base Starkiller", "basePoints": 30 },
+            { "name": "Teniente Dormitz", "basePoints": 31 },
+            { "name": "Mayor Stridan", "basePoints": 32 },
+            { "name": "Kylo Ren", "basePoints": 34 }
+          ]
+        },
+        {
+          "name": "Prototipo TIE Avanzado",
+          "pilots": [
+            { "name": "Piloto de pruebas de Sienar", "basePoints": 16 },
+            { "name": "Barón del Imperio", "basePoints": 19 },
+            { "name": "Valen Rudor", "basePoints": 22 },
+            { "name": "El Inquisidor", "basePoints": 25 }
+          ]
+        },
+        {
+          "name": "Segador TIE",
+          "pilots": [
+            { "name": "Piloto de la base de Scarif", "basePoints": 22 },
+            { "name": "Visir", "basePoints": 23 },
+            { "name": "Capitán Feroph", "basePoints": 24 },
+            { "name": "Mayor Vermeil", "basePoints": 26 }
+          ]
+        },
+        {
+          "name": "Silenciador TIE",
+          "pilots": [
+            { "name": "Analista de Sienar-Jaemus", "basePoints": 26 },
+            { "name": "Piloto de pruebas de la Primera Orden", "basePoints": 29 },
+            { "name": "Piloto de pruebas Apagón", "basePoints": 31 },
+            { "name": "Kylo Ren", "basePoints": 35 }
+          ]
+        },
+        {
+          "name": "TIE Agresor",
+          "pilots": [
+            { "name": "Especialista de Sienar", "basePoints": 17 },
+            { "name": "Doble Filo", "basePoints": 19 },
+            { "name": "Escolta del escuadrón Ónice", "basePoints": 19 },
+            { "name": "Teniente Kestal", "basePoints": 22 }
+          ]
+        },
+        {
+          "name": "TIE Avanzado",
+          "pilots": [
+            { "name": "Piloto del escuadrón Tempestad", "basePoints": 21 },
+            { "name": "Piloto del escuadrón Tormenta", "basePoints": 23 },
+            { "name": "Teniente Colzet", "basePoints": 23 },
+            { "name": "Comandante Alozen", "basePoints": 25 },
+            { "name": "Zertik Strom", "basePoints": 26 },
+            { "name": "Maarek Stele", "basePoints": 27 },
+            { "name": "Juno Eclipse", "basePoints": 28 },
+            { "name": "Darth Vader", "basePoints": 29 }
+          ]
+        },
+        {
+          "name": "TIE Fantasma",
+          "pilots": [
+            { "name": "Piloto del escuadrón Sigma", "basePoints": 25 },
+            { "name": "Piloto del escuadrón Sombra", "basePoints": 27 },
+            { "name": "Eco", "basePoints": 30 },
+            { "name": "Susurro", "basePoints": 32 }
+          ]
+        },
+        {
+          "name": "VT-49 Diezmador",
+          "pilots": [
+            { "name": "Jefe de Patrulla", "basePoints": 40 },
+            { "name": "Capitán Oicunn", "basePoints": 42 },
+            { "name": "Comandante Kenkirk", "basePoints": 44 },
+            { "name": "Contralmirante Chiraneau", "basePoints": 46 }
+          ]
+        }
+      ]
+    },
+    "Escoria y Villanos": {
+      "ships": [
+        {
+          "name": "Agresor",
+          "pilots": [
+            { "name": "IG-88A", "basePoints": 36 },
+            { "name": "IG-88B", "basePoints": 36 },
+            { "name": "IG-88C", "basePoints": 36 },
+            { "name": "IG-88D", "basePoints": 36 }
+          ]
+        },
+        {
+          "name": "Ala-Y",
+          "pilots": [
+            { "name": "Esbirro del sindicato", "basePoints": 18 },
+            { "name": "Piloto de fortuna", "basePoints": 20 },
+            { "name": "Drea Renthal", "basePoints": 22 },
+            { "name": "Kavil", "basePoints": 24 }
+          ]
+        },
+        {
+          "name": "Bombardero Scurrg H-6",
+          "pilots": [
+            { "name": "Pirata de Karthakk", "basePoints": 24 },
+            { "name": "Aparecido de Lok", "basePoints": 26 },
+            { "name": "Sol Sixxa", "basePoints": 28 },
+            { "name": "Capitán Nym (Escoria)", "basePoints": 30 }
+          ]
+        },
+        {
+          "name": "Caza Estelar G-1A",
+          "pilots": [
+            { "name": "Mercenario Despiadado", "basePoints": 23 },
+            { "name": "Buscador Gandiano", "basePoints": 25 },
+            { "name": "4-LOM", "basePoints": 27 },
+            { "name": "Zuckuss", "basePoints": 28 }
+          ]
+        },
+        {
+          "name": "Caza Estelar del Protectorado",
+          "pilots": [
+            { "name": "Recluta entusiasta", "basePoints": 20 },
+            { "name": "Veterano de Concord Dawn", "basePoints": 22 },
+            { "name": "As de Concord Dawn", "basePoints": 23 },
+            { "name": "Kad Solus", "basePoints": 25 },
+            { "name": "Viejo Teroch", "basePoints": 26 },
+            { "name": "Fenn Rau", "basePoints": 28 }
+          ]
+        },
+        {
+          "name": "Caza Kihraxz",
+          "pilots": [
+            { "name": "Salteador del Cártel", "basePoints": 20 },
+            { "name": "As del Sol Negro", "basePoints": 23 },
+            { "name": "Capitán Jostero", "basePoints": 24 },
+            { "name": "Graz el Cazador", "basePoints": 25 },
+            { "name": "Viktor Hel", "basePoints": 25 },
+            { "name": "Talonbane Cobra", "basePoints": 28 }
+          ]
+        },
+        {
+          "name": "Caza M12-L Kimogila",
+          "pilots": [
+            { "name": "Secuaz del Cártel", "basePoints": 22 },
+            { "name": "Verdugo del Cártel", "basePoints": 24 },
+            { "name": "Dalan Oberos (Kimogila)", "basePoints": 25 },
+            { "name": "Torani Kulda", "basePoints": 27 }
+          ]
+        },
+        {
+          "name": "Firespray-31",
+          "pilots": [
+            { "name": "Mercenario Mandaloriano", "basePoints": 35 },
+            { "name": "Emon Azzameen", "basePoints": 36 },
+            { "name": "Kath Scarlet (Escoria)", "basePoints": 38 },
+            { "name": "Boba Fett (Escoria)", "basePoints": 39 }
+          ]
+        },
+        {
+          "name": "HWK-290",
+          "pilots": [
+            { "name": "Traficante de Especia", "basePoints": 16 },
+            { "name": "Torkil Mux", "basePoints": 19 },
+            { "name": "Palob Godalhi", "basePoints": 20 },
+            { "name": "Dace Bonearm", "basePoints": 23 }
+          ]
+        },
+        {
+          "name": "Interceptor M3-A",
+          "pilots": [
+            { "name": "Agente del Cártel", "basePoints": 14 },
+            { "name": "Sunny Bounder", "basePoints": 14 },
+            { "name": "Inaldra", "basePoints": 15 },
+            { "name": "Veterano de Punto Tansarii", "basePoints": 17 },
+            { "name": "Laetin A'shera", "basePoints": 18 },
+            { "name": "Quinn Jast", "basePoints": 18 },
+            { "name": "Genesis Red", "basePoints": 19 },
+            { "name": "Serissu", "basePoints": 20 }
+          ]
+        },
+        {
+          "name": "Nave de persecución clase Lancero",
+          "pilots": [
+            { "name": "Cazador de puerto clandestino", "basePoints": 33 },
+            { "name": "Sabine Wren (Escoria)", "basePoints": 35 },
+            { "name": "Asajj Ventress", "basePoints": 37 },
+            { "name": "Ketsu Onyo", "basePoints": 38 }
+          ]
+        },
+        {
+          "name": "Saltador Maestro 5000",
+          "pilots": [
+            { "name": "Explorador Contratado", "basePoints": 25 },
+            { "name": "Manaroo", "basePoints": 27 },
+            { "name": "Tel Trevura", "basePoints": 30 },
+            { "name": "Dengar", "basePoints": 33 }
+          ]
+        },
+        {
+          "name": "Saltador Quad",
+          "pilots": [
+            { "name": "Traficante de armas de Jakku", "basePoints": 15 },
+            { "name": "Unkar Plutt", "basePoints": 17 },
+            { "name": "Sarco Plank", "basePoints": 18 },
+            { "name": "Alguacil Zuvio", "basePoints": 19 }
+          ]
+        },
+        {
+          "name": "Víbora Estelar",
+          "pilots": [
+            { "name": "Ejecutor del Sol Negro", "basePoints": 25 },
+            { "name": "Vigo del Sol Negro", "basePoints": 27 },
+            { "name": "Asesino del Sol Negro", "basePoints": 28 },
+            { "name": "Thweek", "basePoints": 28 },
+            { "name": "Dalan Oberos", "basePoints": 30 },
+            { "name": "Guri", "basePoints": 30 },
+            { "name": "Principe Xizor", "basePoints": 31 }
+          ]
+        },
+        {
+          "name": "YV-666",
+          "pilots": [
+            { "name": "Esclavista Trandoshano", "basePoints": 29 },
+            { "name": "Latts Razzi", "basePoints": 33 },
+            { "name": "Moralo Eval", "basePoints": 34 },
+            { "name": "Bossk", "basePoints": 35 }
+          ]
+        },
+        {
+          "name": "Z-95 Cazacabezas",
+          "pilots": [
+            { "name": "Pirata Binayre", "basePoints": 12 },
+            { "name": "Sicario del Sol Negro", "basePoints": 13 },
+            { "name": "Kaa'to Leeachos", "basePoints": 15 },
+            { "name": "N'Dru Suhlak", "basePoints": 17 }
           ]
         }
       ]
