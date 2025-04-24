@@ -74,3 +74,7 @@ button:focus-visible {
   flex-direction: column;
   justify-content: center; /* Centra el contenido verticalmente */
 }
+
+.background {
+  background-color: #d9d7e8;
+}

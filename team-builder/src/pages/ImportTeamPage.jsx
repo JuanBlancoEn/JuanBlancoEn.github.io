@@ -23,7 +23,7 @@ function ImportTeamPage() {
   }, [location.search]);
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 background">
 
       {/* Solo mostrar el SquadBuilder cuando haya una facción seleccionada */}
       { (

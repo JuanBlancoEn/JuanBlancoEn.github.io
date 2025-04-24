@@ -9,8 +9,8 @@ function CreateTeamPage() {
   const [showImportButton, setShowImportButton] = useState(false); // No se usa en esta página
 
   return (
-    <div className="container mt-4">
-      <h2>Crear Equipo</h2>
+    <div className="container mt-4 background">
+      <h2>Crear escuadrón</h2>
       
       {/* Mostrar el selector de facción */}
       <FactionSelector
