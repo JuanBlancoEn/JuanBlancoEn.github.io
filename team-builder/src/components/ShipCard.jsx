@@ -8,10 +8,11 @@ function ShipCard({ ship, onAddPilot }) {
   const [selectedUpgrade, setSelectedUpgrade] = useState(null);
   const [appliedUpgrades, setAppliedUpgrades] = useState([]);
 
+  // useEffect que limpia las mejoras cuando se cambia de nave o piloto
   useEffect(() => {
-    setSelectedAbilities([]);
-    setAppliedUpgrades([]);
-  }, [selectedPilot]);
+    setSelectedAbilities([]); // Limpiar habilidades
+    setAppliedUpgrades([]); // Limpiar las mejoras
+  }, [selectedPilot, ship]); // Este efecto se ejecuta cada vez que cambia el piloto o la nave
 
   const handleAdd = () => {
     if (selectedPilot) {
@@ -101,15 +102,15 @@ function ShipCard({ ship, onAddPilot }) {
 
       {/* Lista de mejoras aplicadas */}
       {appliedUpgrades.length > 0 && (
-  <div className="mt-2">
-    <strong>Mejoras añadidas:</strong>
-    <ul>
-      {appliedUpgrades.map((upg, i) => (
-        <li key={i}>{upg.name} (+{upg.points} pts)</li>
-      ))}
-    </ul>
-  </div>
-)}
+        <div className="mt-2">
+          <strong>Mejoras añadidas:</strong>
+          <ul>
+            {appliedUpgrades.map((upg, i) => (
+              <li key={i}>{upg.name} (+{upg.points} pts)</li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <button className="btn btn-primary" onClick={handleAdd} disabled={!selectedPilot}>
         Añadir al equipo

@@ -13,16 +13,18 @@ function SquadBuilder({ factionData, factionName, preloadedSquad = [] }) {
   const addShip = (pilot, upgrades, totalPoints) => {
     const basePoints = pilot.basePoints;
 
-    const newShip = {
-      id: Date.now(),
-      name: selectedShip.name,
-      pilot: pilot.name,
-      basePoints,
-      appliedUpgrades: upgrades,
-      points: totalPoints,
-    };
-
-    setSquad(prev => [...prev, newShip]);
+    // Limpiar las mejoras de todas las naves en el escuadrón antes de añadir una nueva nave
+    setSquad(prevSquad => [
+      ...prevSquad,  // Agregar la nave nueva
+      {
+        id: Date.now(),
+        name: selectedShip.name,
+        pilot: pilot.name,
+        basePoints,
+        appliedUpgrades: upgrades, // Aquí aplicas las mejoras de la nave actual
+        points: totalPoints,
+      }
+    ]);
   };
 
   const handleShare = () => {
