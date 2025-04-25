@@ -76,5 +76,133 @@ button:focus-visible {
 }
 
 .background {
-  background-color: #d9d7e8;
+  background-color: #ac3e3e	;
+  background: #FF1C1C;
+background: linear-gradient(90deg, rgba(255, 28, 28, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 191, 255, 1) 100%);
 }
+
+
+
+/* === Star Wars Theme Colors === */
+
+/* REDS */
+.bg-crimson-sith {
+  background-color: #8B0000 !important;
+  color: #ffffff;
+}
+.bg-blood-red {
+  background-color: #B22222 !important;
+  color: #ffffff;
+}
+.text-laser-red {
+  color: #FF1C1C !important;
+}
+.bg-imperial-scarlet {
+  background-color: #D72638 !important;
+  color: #ffffff;
+}
+
+/* BLUES */
+.bg-jedi-blue {
+  background-color: #1E90FF !important;
+  color: #ffffff;
+}
+.bg-lightsaber-blue {
+  background-color: #00BFFF !important;
+  color: #ffffff;
+}
+.text-holo-blue {
+  color: #3F8EFC !important;
+}
+.bg-rebel-sky {
+  background-color: #87CEFA !important;
+  color: #000000;
+}
+
+/* NEUTRAL TONES */
+.bg-empire-black {
+  background-color: #0A0A0A !important;
+  color: #ffffff;
+}
+.bg-droid-gray {
+  background-color: #2E2E2E !important;
+  color: #ffffff;
+}
+.bg-stormtrooper-white {
+  background-color: #F8F8F8 !important;
+  color: #000000;
+}
+
+/* BUTTONS */
+.btn-sith {
+  background-color: #8B0000;
+  color: white;
+  border: none;
+}
+.btn-sith:hover {
+  background-color: #B22222;
+}
+
+.btn-jedi {
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+}
+.btn-jedi:hover {
+  background-color: #00BFFF;
+}
+
+/* NAVBAR */
+.navbar-sith {
+  background-color: #0A0A0A;
+  /*border-bottom: 2px solid #FF1C1C; */
+}
+.navbar-jedi {
+  background-color: #1E90FF;
+  border-bottom: 2px solid #00BFFF;
+}
+
+/* CUSTOM UTILITIES */
+.border-laser-red {
+  border: 2px solid #FF1C1C !important;
+}
+
+.shadow-holo {
+  box-shadow: 0 0 10px #3F8EFC !important;
+}
+
+.navbar-bg{
+  background: linear-gradient(90deg, rgba(255, 28, 28, 1) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(0, 191, 255, 1) 100%);
+  background-clip: padding-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+
+  /* Capa oscura semitransparente para contraste */
+  background-color: rgba(0, 0, 0, 1);
+
+  /* Blur efecto vidrio */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  /* Borde sutil abajo */
+  border-bottom: none;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.nav-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: rgba(40, 40, 40, 0.3);
+}
+

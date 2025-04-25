@@ -179,6 +179,21 @@
       { "name": "Repetidor de comunicaciones", "points": 3 },
       { "name": "Sincronizador de disparos", "points": 3 }
     ],
+    "Mejora Ilícita": [
+      { "name": "Amortiguadores de inercia", "points": 1 },
+      { "name": "Ciberimplantes ilícitos", "points": 1 },
+      { "name": "Sistemas ilegales de guerra electrónica", "points": 1 },
+      { "name": "Superacelerador de emergencia", "points": 1 },
+      { "name": "Tolva de evacuación de carga", "points": 1 },
+      { "name": "Brillestim", "points": 2 },
+      { "name": "Descargadores de iones", "points": 2 },
+      { "name": "Dispositivo de camuflaje", "points": 2 },
+      { "name": "Dispositivo de represalia", "points": 2 },
+      { "name": "Dispositivo de pulso electromagnético", "points": 2 },
+      { "name": "Grúa de salvamento", "points": 2 },
+      { "name": "Transmisor de sobrecargas", "points": 2 },
+      { "name": "Cañón blaster deshechable", "points": 3 }
+    ],
     "Talentos de élite": [
       { "name": "Adaptabilidad", "points": 0 },
       { "name": "Dispario inverosímil", "points": 0 },
@@ -253,14 +268,19 @@
       { "name": "Vanguardia de la Primera Orden", "points": 2 },
       { "name": "TIE/x1", "points": 0 },
       { "name": "Intrépido", "points": 2 },
-      { "name": "AAAAAA", "points": 1 },
-      { "name": "AAAAAA", "points": 1 },
-      { "name": "AAAAAA", "points": 1 },
-      { "name": "AAAAAA", "points": 1 },
-      { "name": "AAAAAA", "points": 1 },
-      { "name": "AAAAAA", "points": 1 },
-      { "name": "AAAAAA", "points": 1 },
-      { "name": "AAAAAA", "points": 1 }
+      { "name": "IG-2000", "points": 0 },
+      { "name": "Cazador de la Niebla", "points": 0 },
+      { "name": "Protector de Concord Dawn", "points": 1 },
+      { "name": "Vaksai", "points": 0 },
+      { "name": "Brazo Ejecutor", "points": 1 },
+      { "name": "Interceptor Scyk Ligero", "points": -2 },
+      { "name": "Interceptor Scyk Pesado (Cañón)", "points": 2 },
+      { "name": "Interceptor Scyk Pesado (Misil)", "points": 2 },
+      { "name": "Interceptor Scyk Pesado (Torpedo)", "points": 2 },
+      { "name": "Sombra Alargada", "points": 3 },
+      { "name": "Víbora Estelar modelo II", "points": -3 },
+      { "name": "Virago", "points": 1 },
+      { "name": "Diente de Perro", "points": 6 }
     ]
   }
 }
