@@ -30,7 +30,7 @@ function ImportTeamPage() {
 
   return (
     <div className="d-flex justify-content-center align-items-center background" style={{ minHeight: '100vh' }}>
-      <div className="container-fluid p-4 border rounded shadow" style={{ maxWidth: '1000px' }}>
+      <div className="container-fluid p-4 rounded shadow" style={{ maxWidth: '1000px' }}>
         <h2>Importar escuadrón</h2>
 
         {/* Campo de URL */}

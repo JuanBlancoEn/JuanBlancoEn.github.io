@@ -73,6 +73,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centra el contenido verticalmente */
+  border: none;
 }
 
 .background {

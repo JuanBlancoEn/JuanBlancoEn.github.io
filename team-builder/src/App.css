@@ -61,4 +61,5 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centra el contenido verticalmente */
+  border: none;
 }

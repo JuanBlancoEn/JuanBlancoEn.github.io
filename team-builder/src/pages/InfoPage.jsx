@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function InfoPage() {
   return (
     <div className="d-flex justify-content-center align-items-center background" style={{ minHeight: '100vh' }}>
-      <div className="container-fluid p-4 border rounded shadow" style={{ maxWidth: '1000px' }}>
+      <div className="container-fluid p-4 rounded shadow" style={{ maxWidth: '1000px' }}>
         <div className="text-center">
           <h1 className="mb-4">R2D2 X-Wing</h1>
           <p className="lead">

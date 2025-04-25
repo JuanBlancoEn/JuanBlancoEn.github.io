@@ -29,7 +29,7 @@ function CreateTeamPage() {
         transition: 'background 1s ease-in-out', // Esto añadirá una transición suave al fondo
       }}
     >
-      <div className="container-fluid p-4 border rounded shadow" style={{ maxWidth: '1000px' }}>
+      <div className="container-fluid p-4 rounded shadow" style={{ maxWidth: '1000px' }}>
         <div className="container mt-4">
           <h2>Crear escuadrón</h2>
           
