@@ -101,15 +101,15 @@ function ShipCard({ ship, onAddPilot }) {
 
       {/* Lista de mejoras aplicadas */}
       {appliedUpgrades.length > 0 && (
-        <div className="mt-2">
-          <strong>Mejoras añadidas:</strong>
-          <ul>
-            {appliedUpgrades.map((upg, i) => (
-              <li key={i}>{upg.name} (+{upg.points} pts)</li>
-            ))}
-          </ul>
-        </div>
-      )}
+  <div className="mt-2">
+    <strong>Mejoras añadidas:</strong>
+    <ul>
+      {appliedUpgrades.map((upg, i) => (
+        <li key={i}>{upg.name} (+{upg.points} pts)</li>
+      ))}
+    </ul>
+  </div>
+)}
 
       <button className="btn btn-primary" onClick={handleAdd} disabled={!selectedPilot}>
         Añadir al equipo
