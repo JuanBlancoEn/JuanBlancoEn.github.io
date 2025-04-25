@@ -1,17 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ShipCard from './ShipCard';
 import SquadSummary from './SquadSummary';
-import { encodeSquad } from '../utils/encodeSquad'; // Asegúrate de importar correctamente la función encodeSquad
-import { decodeSquad } from '../utils/encodeSquad'; // Asegúrate de tener esta función para decodificar el escuadrón
+import { encodeSquad, decodeSquad } from '../utils/encodeSquad';
 
 function SquadBuilder({ factionData, factionName, preloadedSquad = [] }) {
   const [squad, setSquad] = useState([]);
-  const [importedSquad, setImportedSquad] = useState(null); // Estado para almacenar el escuadrón importado
+  const [selectedShipName, setSelectedShipName] = useState('');
+  const [importedSquad, setImportedSquad] = useState(null);
+
+  useEffect(() => {
+    // Resetear nave seleccionada si cambia la facción
+    setSelectedShipName('');
+    setSquad([]);
+    setImportedSquad(null);
+  }, [factionName]);
 
   const handleImport = (encodedData) => {
-    const decoded = decodeSquad(encodedData); // Decodificar el escuadrón
+    const decoded = decodeSquad(encodedData);
     if (decoded && decoded.ships) {
-      setImportedSquad(decoded.ships); // Establecer el escuadrón importado
+      setImportedSquad(decoded.ships);
     }
   };
 
@@ -22,7 +29,7 @@ function SquadBuilder({ factionData, factionName, preloadedSquad = [] }) {
       return sum + (ability?.points || 0);
     }, 0);
     const totalPoints = basePoints + abilityPoints;
-  
+
     const newShip = {
       id: Date.now(),
       name: ship.name,
@@ -32,30 +39,46 @@ function SquadBuilder({ factionData, factionName, preloadedSquad = [] }) {
       points: totalPoints,
       abilities: selectedAbilities,
     };
-  
+
     setSquad(prev => [...prev, newShip]);
   };
 
   const handleShare = () => {
-    const encoded = encodeSquad(factionName, squad); // Codificar los datos del escuadrón
-    const url = `${window.location.origin}/create?data=${encoded}`; // Generar la URL con los datos
-    navigator.clipboard.writeText(url) // Copiar la URL al portapapeles
+    const encoded = encodeSquad(factionName, squad);
+    const url = `${window.location.origin}/create?data=${encoded}`;
+    navigator.clipboard.writeText(url)
       .then(() => alert("¡URL copiada al portapapeles!"))
       .catch(() => alert("No se pudo copiar la URL"));
   };
 
+  const selectedShip = factionData.ships.find(s => s.name === selectedShipName);
+
   return (
     <div className="mt-4">
-      <h4>Naves disponibles</h4>
-      <div className="row">
-        {factionData?.ships.map((ship) => (
-          <div className="col-md-6 mb-3" key={ship.name}>
-            <ShipCard ship={ship} onAddPilot={(pilot) => addShip(ship, pilot)} />
-          </div>
-        ))}
+      <h4>Selecciona una nave</h4>
+      <div className="mb-3">
+        <select
+          className="form-select"
+          value={selectedShipName}
+          onChange={(e) => setSelectedShipName(e.target.value)}
+        >
+          <option value="">-- Elige una nave --</option>
+          {factionData?.ships.map((ship) => (
+            <option key={ship.name} value={ship.name}>
+              {ship.name}
+            </option>
+          ))}
+        </select>
       </div>
 
-      {/* Mostrar el escuadrón importado si está disponible */}
+      {selectedShip && (
+        <div className="row">
+          <div className="col-md-12 mb-3">
+            <ShipCard ship={selectedShip} onAddPilot={(pilot, abilities) => addShip(selectedShip, pilot, abilities)} />
+          </div>
+        </div>
+      )}
+
       {importedSquad && (
         <>
           <h4>Escuadrón Importado</h4>
@@ -86,7 +109,6 @@ function SquadBuilder({ factionData, factionName, preloadedSquad = [] }) {
         </div>
       )}
 
-      {/* Botón para importar el equipo */}
       <div className="mt-4">
         <input
           type="text"
@@ -101,7 +123,7 @@ function SquadBuilder({ factionData, factionName, preloadedSquad = [] }) {
             const params = new URLSearchParams(new URL(url).search);
             const encodedData = params.get('data');
             if (encodedData) {
-              handleImport(encodedData); // Importar el escuadrón desde la URL
+              handleImport(encodedData);
             }
           }}
         >

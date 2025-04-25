@@ -1,30 +1,34 @@
 import React, { useState, useEffect } from 'react';
+import upgradesData from '../data/upgrades.json';
 
 function ShipCard({ ship, onAddPilot }) {
   const [selectedPilot, setSelectedPilot] = useState(null);
   const [selectedAbilities, setSelectedAbilities] = useState([]);
+  const [selectedUpgradeType, setSelectedUpgradeType] = useState('');
+  const [selectedUpgrade, setSelectedUpgrade] = useState(null);
+  const [appliedUpgrades, setAppliedUpgrades] = useState([]);
 
   useEffect(() => {
-    // Cuando el piloto cambia, restablecemos las habilidades seleccionadas
     setSelectedAbilities([]);
+    setAppliedUpgrades([]);
   }, [selectedPilot]);
 
   const handleAdd = () => {
     if (selectedPilot) {
-      // Calculamos el total de puntos (base + habilidades seleccionadas)
       const totalPoints =
-        selectedPilot.basePoints + selectedAbilities.reduce((sum, ability) => sum + ability.points, 0);
+        selectedPilot.basePoints +
+        appliedUpgrades.reduce((sum, u) => sum + u.points, 0);
 
-      // Añadimos el piloto con las habilidades seleccionadas
-      onAddPilot(selectedPilot, selectedAbilities, totalPoints);
+      onAddPilot(selectedPilot, appliedUpgrades, totalPoints);
     }
   };
 
-  const toggleAbility = (ability) => {
-    if (selectedAbilities.includes(ability)) {
-      setSelectedAbilities(selectedAbilities.filter((a) => a !== ability));
-    } else {
-      setSelectedAbilities([...selectedAbilities, ability]);
+  const handleAddUpgrade = () => {
+    if (selectedUpgrade) {
+      const exists = appliedUpgrades.some((u) => u.name === selectedUpgrade.name);
+      if (!exists) {
+        setAppliedUpgrades([...appliedUpgrades, selectedUpgrade]);
+      }
     }
   };
 
@@ -32,12 +36,11 @@ function ShipCard({ ship, onAddPilot }) {
     <div className="card p-3">
       <h5>{ship.name}</h5>
 
-      {/* Selección de piloto */}
       <select
         className="form-select mb-2"
         onChange={(e) => {
           const pilot = ship.pilots.find((p) => p.name === e.target.value);
-          setSelectedPilot(pilot); // Establecemos el piloto seleccionado
+          setSelectedPilot(pilot);
         }}
       >
         <option>Seleccionar piloto</option>
@@ -48,22 +51,63 @@ function ShipCard({ ship, onAddPilot }) {
         ))}
       </select>
 
-      {/* Mostrar habilidades opcionales del piloto seleccionado */}
-      {selectedPilot && selectedPilot.optionalAbilities && (
+      {/* Selección de tipo de mejora */}
+      {selectedPilot && (
         <div className="mb-2">
-          <strong>Habilidades opcionales:</strong>
-          {selectedPilot.optionalAbilities.map((ability) => (
-            <div key={ability.name}>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={selectedAbilities.includes(ability)}
-                  onChange={() => toggleAbility(ability)}
-                />{" "}
-                {ability.name} (+{ability.points} pts)
-              </label>
-            </div>
-          ))}
+          <label><strong>Tipo de mejora:</strong></label>
+          <select
+            className="form-select"
+            onChange={(e) => {
+              setSelectedUpgradeType(e.target.value);
+              setSelectedUpgrade(null);
+            }}
+            value={selectedUpgradeType}
+          >
+            <option value="">Selecciona un tipo</option>
+            {Object.keys(upgradesData.upgrades).map((type) => (
+              <option key={type} value={type}>
+                {type}
+              </option>
+            ))}
+          </select>
+        </div>
+      )}
+
+      {/* Selección de mejora específica */}
+      {selectedUpgradeType && (
+        <div className="mb-2">
+          <label><strong>Mejora:</strong></label>
+          <select
+            className="form-select"
+            onChange={(e) => {
+              const upgrade = upgradesData.upgrades[selectedUpgradeType].find(
+                (u) => u.name === e.target.value
+              );
+              setSelectedUpgrade(upgrade);
+            }}
+          >
+            <option value="">Selecciona una mejora</option>
+            {upgradesData.upgrades[selectedUpgradeType].map((upgrade) => (
+              <option key={upgrade.name} value={upgrade.name}>
+                {upgrade.name} (+{upgrade.points} pts)
+              </option>
+            ))}
+          </select>
+          <button className="btn btn-sm btn-outline-secondary mt-2" onClick={handleAddUpgrade}>
+            Añadir mejora
+          </button>
+        </div>
+      )}
+
+      {/* Lista de mejoras aplicadas */}
+      {appliedUpgrades.length > 0 && (
+        <div className="mt-2">
+          <strong>Mejoras añadidas:</strong>
+          <ul>
+            {appliedUpgrades.map((upg, i) => (
+              <li key={i}>{upg.name} (+{upg.points} pts)</li>
+            ))}
+          </ul>
         </div>
       )}
 
