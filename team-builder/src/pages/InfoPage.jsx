@@ -34,8 +34,15 @@ function InfoPage() {
             Volver a la página de inicio
           </Link>
         </div>
-      </div>
+
+        <footer className="text-center mt-5">
+          <p>&copy; {new Date().getFullYear()} <Link to="https://github.com/JuanBlancoEn" target="_blank">JuanBlancoEn</Link>.  Proyecto de código abierto.</p>
+        </footer>
+      </div>   
     </div>
+    
+    
+
   );
 }
 
