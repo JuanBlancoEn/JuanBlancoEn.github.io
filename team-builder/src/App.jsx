@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import HomePage from './pages/HomePage';
 import CreateTeamPage from './pages/CreateTeamPage';
-import TeamDetailPage from './pages/TeamDetailPage';
 import Navbar from './components/Navbar';
 import ImportTeamPage from './pages/ImportTeamPage';
+import InfoPage from './pages/InfoPage';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/create" element={<CreateTeamPage />} />
-          <Route path="/team/:id" element={<TeamDetailPage />} />
+          <Route path="/info" element={<InfoPage />} />
           <Route path="/import" element={<ImportTeamPage />} /> {/* Ruta para importar equipo */}
         </Routes>
       </div>

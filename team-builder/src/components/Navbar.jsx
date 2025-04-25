@@ -25,6 +25,7 @@ function Navbar() {
           <Link to="/" className="nav-btn text-white">Inicio</Link>
           <Link to="/create" className="nav-btn text-white">Crear Equipo</Link>
           <Link to="/import" className="nav-btn text-white">Importar Equipo</Link>
+          <Link to="/info" className="nav-btn text-white">Contactanos</Link>
         </div>
       </div>
     </nav>
