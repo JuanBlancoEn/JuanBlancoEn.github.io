@@ -103,7 +103,7 @@
         {
             "name": "Bombardero Scurrg H-6",
             "pilots": [
-            { "name": "Capitám Nym (Rebelde)", "basePoints": 30 }
+            { "name": "Capitán Nym (Rebelde)", "basePoints": 30 }
           ]
         },
         {
@@ -113,7 +113,7 @@
              { "name": "Libertador wookie", "basePoints": 26 },
              { "name": "Lowhhrick", "basePoints": 28 },
              { "name": "Wullffwarro", "basePoints": 30 }
-            ]
+          ]
         },
         {
             "name": "Caza TIE",
@@ -122,7 +122,7 @@
              { "name": "Capitán Rex", "basePoints": 14 },
              { "name": "Sabine Wren", "basePoints": 15 },
              { "name": "Ahsoka Tano", "basePoints": 17 }
-              ]
+          ]
         },
         {
             "name": "HWK-290",
@@ -131,7 +131,7 @@
              { "name": "Roark Garnet", "basePoints": 19 },
              { "name": "Kyle Katarn", "basePoints": 21 },
              { "name": "Jan Ors", "basePoints": 25 }
-                ]
+          ]
         },
         {
             "name": "Lanzadera clase Sheathipede",
@@ -140,7 +140,7 @@
                 { "name": "Zeb Orrelios", "basePoints": 16 },
                 { "name": "Ezra Bridger", "basePoints": 17 },
                 { "name": "Fenn Rau", "basePoints": 20 }
-                  ]
+          ]
         },
         {
             "name": "Lanzadera de Ataque",
@@ -149,7 +149,7 @@
                 { "name": "Ezra Bridger", "basePoints": 20 },
                 { "name": "Sabine Wren", "basePoints": 21 },
                 { "name": "Hera Syndulla", "basePoints": 22 }
-                    ]
+          ]
         },
         {
             "name": "T-70 Ala-X",
@@ -162,7 +162,7 @@
                 { "name": "As Rojo", "basePoints": 29 },
                 { "name": "Nien Nunb", "basePoints": 29 },
                 { "name": "Ello Asty", "basePoints": 30 }
-                      ]
+          ]
         },
         {
             "name": "VCX-100",
@@ -171,7 +171,7 @@
                 { "name": "Chopper", "basePoints": 37 },
                 { "name": "Kanan Jarrus", "basePoints": 38 },
                 { "name": "Hera Syndulla", "basePoints": 40 }
-                        ]
+          ]
         },
         {
             "name": "YT-1300",
@@ -184,7 +184,7 @@
                 { "name": "Rey", "basePoints": 45 },
                 { "name": "Han Solo", "basePoints": 46 },
                 { "name": "Han Solo (TFA)", "basePoints": 46 }
-                          ]
+          ]
         },
         {
             "name": "YT-2400",
@@ -193,7 +193,7 @@
                 { "name": "Eaden Vrill", "basePoints": 32 },
                 { "name": "Leebo", "basePoints": 34 },
                 { "name": "Dash Rendar", "basePoints": 36 }
-                            ]
+          ]
         },
         {
             "name": "Z-95 Cazacabezas",
@@ -202,8 +202,83 @@
                 { "name": "Piloto del escuadrón Tala", "basePoints": 13 },
                 { "name": "Teniente Blount", "basePoints": 17 },
                 { "name": "Airen Cracken", "basePoints": 19 }
-                              ]
-        }
+          ]
+        },
+        {
+          "name": "Bola de Fuego",
+          "pilots": [
+              { "name": "R1-J5", "basePoints": 20 },
+              { "name": "Mecánico de la estación Coloso", "basePoints": 22 },
+              { "name": "Jarek Yeager", "basePoints": 24 },
+              { "name": "Kazuda", "basePoints": 26 }
+          ]
+        },
+        {
+          "name": "Delta-7",
+          "pilots": [
+              { "name": "Anakin Skywalker", "basePoints": 27 },
+              { "name": "Luminara Unduli", "basePoints": 24 },
+              { "name": "Barriss Offee", "basePoints": 24 },
+              { "name": "Ahsoka Tano", "basePoints": 23 },
+              { "name": "Caballero Jedi", "basePoints": 22 }
+          ]
+      },
+      {
+        "name": "Caza Guantelete",
+        "pilots": [
+            { "name": "Libertador búhos nocturnos", "basePoints": 27 },
+            { "name": "Piloto de la resistencia Mandaloriana", "basePoints": 28 },
+            { "name": "Chopper", "basePoints": 29 },
+            { "name": "Ezra Bridger", "basePoints": 32 },
+            { "name": "Bo-Katan Kryze", "basePoints": 34 }
+        ]
+      },
+      {
+      "name": "ETA-2 Actis",
+      "pilots": [
+          { "name": "Anakin Skywalker", "basePoints": 26 },
+          { "name": "Obi-Wan Kenobi", "basePoints": 25 },
+          { "name": "Aayla Secura", "basePoints": 24 },
+          { "name": "Caballero Jedi", "basePoints": 23 },
+          { "name": "Shaak Ti", "basePoints": 22 },
+          { "name": "Yoda", "basePoints": 20 }
+        ]
+      },
+      {
+      "name": "Caza R. Naboo N-1",
+      "pilots": [
+          { "name": "Doncella de Naboo", "basePoints": 22 },
+          { "name": "Oficial de Escuadrilla Bravo", "basePoints": 21 },
+          { "name": "Dineé EllBerger", "basePoints": 23 },
+          { "name": "Padme Amidala", "basePoints": 25 },
+          { "name": "Anakin Skywalker", "basePoints": 25 },
+          { "name": "Ric Olié", "basePoints": 27 }
+        ]
+      },
+      {
+      "name": "Transporte Rebelde",
+      "pilots": [
+          { "name": "Piloto de la División de Logística", "basePoints": 17 },
+          { "name": "Pammich Nerro Goode", "basePoints": 20 },
+          { "name": "Nodin Chavdri", "basePoints": 21 },
+          { "name": "Cova Nell", "basePoints": 26 },
+          { "name": "BB-8", "basePoints": 13 },
+          { "name": "Vi Moradi", "basePoints": 14 },
+          { "name": "Rose Tico", "basePoints": 16 },
+          { "name": "Finn", "basePoints": 20 }
+        ]
+      },
+      {
+      "name": "Ases Estelares",
+      "pilots": [
+          { "name": "Corran Horn", "basePoints": 27 },
+          { "name": "Keo Venzee", "basePoints": 21 },
+          { "name": "Pops Krail", "basePoints": 21 },
+          { "name": "Juno Eclipse", "basePoints": 26 },
+          { "name": "Segunda Hermana", "basePoints": 25 },
+          { "name": "Yrica Quell", "basePoints": 14 }
+        ]
+      }
       ]
     },
     "Imperio Galáctico": {
@@ -253,7 +328,12 @@
             { "name": "Maldición Oscura", "basePoints": 16 },
             { "name": "Azote", "basePoints": 17 },
             { "name": "Mutilador Mithel", "basePoints": 17 },
-            { "name": "Aullador Veloz", "basePoints": 18 }
+            { "name": "Aullador Veloz", "basePoints": 18 },
+            { "name": "Wampa II", "basePoints": 15 },
+            { "name": "Seyn Marana", "basePoints": 16 },
+            { "name": "Del Meeko", "basePoints": 16 },
+            { "name": "Gideon Hask", "basePoints": 16 },
+            { "name": "Azote Skutu", "basePoints": 17 }
           ]
         },
         {
@@ -288,7 +368,14 @@
             { "name": "Piloto del escuadrón Guja", "basePoints": 34 },
             { "name": "Coronel Vessery", "basePoints": 35 },
             { "name": "Maarek Stele (Defensor TIE)", "basePoints": 35 },
-            { "name": "Rexler Brath", "basePoints": 37 }
+            { "name": "Rexler Brath", "basePoints": 37 },
+            { "name": "Darth Vader", "basePoints":43 },
+            { "name": "Coronel Jendon", "basePoints": 40 },
+            { "name": "Capitán Yorr", "basePoints": 36 },
+            { "name": "Jefe de Patrulla", "basePoints": 40 },
+            { "name": "Capitán Oicunn", "basePoints": 42 },
+            { "name": "Comandante Kenkirk", "basePoints": 44 },
+            { "name": "Contralmirante Chiraneau", "basePoints": 46 }
           ]
         },
         {
@@ -410,6 +497,40 @@
             { "name": "Capitán Oicunn", "basePoints": 42 },
             { "name": "Comandante Kenkirk", "basePoints": 44 },
             { "name": "Contralmirante Chiraneau", "basePoints": 46 }
+          ]
+        },
+        {
+          "name": "TIE Avanzado Alfa",
+          "pilots": [
+            { "name": "Baron del Imperio", "basePoints": 17 },
+            { "name": "Inquisidor", "basePoints": 19 },
+            { "name": "Séptima Hermana", "basePoints": 25 },
+            { "name": "Gran Inquisidor", "basePoints": 27 }
+          ]
+        },
+        {
+          "name": "Interceptor TIE/BA",
+          "pilots": [
+            { "name": "Proveedor Primera Orden", "basePoints": 23 },
+            { "name": "Ember (Ascua)", "basePoints": 26 },
+            { "name": "Holo", "basePoints": 28 },
+            { "name": "Major Vonreg", "basePoints": 30 }
+          ]
+        },
+        {
+          "name": "Caza Guantelete",
+          "pilots": [
+            { "name": "Supercomando Imperial", "basePoints": 27 },
+            { "name": "Capitán Hark", "basePoints": 28 },
+            { "name": "Gar Saxon", "basePoints": 32 }
+          ]
+        },
+        {
+          "name": "Ases Estelares",
+          "pilots": [
+            { "name": "Juno Eclipse", "basePoints": 26 },
+            { "name": "Segunda Hermana", "basePoints": 25 },
+            { "name": "Yrica Quell", "basePoints": 14 }
           ]
         }
       ]

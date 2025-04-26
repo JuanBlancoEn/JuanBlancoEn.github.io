@@ -101,7 +101,16 @@
       { "name": "Motor mejorado", "points": 4 },
       { "name": "Generadores optimizados", "points": 5 },
       { "name": "Tubos de artilleria", "points": 5 },
-      { "name": "Procedimientos automatizados", "points": 5 }
+      { "name": "Procedimientos automatizados", "points": 5 },
+      { "name": "Delta-7 Duende del Eter", "points": 5 },
+      { "name": "Delta-7 Duende del Eter", "points": 7 },
+      { "name": "Delta-7 Duende del Eter", "points": 9 },
+      { "name": "Hermana de la Noche", "points": 1 },
+      { "name": "Defensor TIE/A1", "points": 0 },
+      { "name": "Aceleración máxima", "points": 0 }
+    ],
+    "Configuración": [
+      { "name": "Ala basculante", "points": 0 }
     ],
     "Tripulación": [
       { "name": "Chopper", "points": 0 },
@@ -280,7 +289,9 @@
       { "name": "Sombra Alargada", "points": 3 },
       { "name": "Víbora Estelar modelo II", "points": -3 },
       { "name": "Virago", "points": 1 },
-      { "name": "Diente de Perro", "points": 6 }
+      { "name": "Diente de Perro", "points": 6 },
+      { "name": "Bola de Fuego de Kaz", "points": 1 },
+      { "name": "Hermana de la Noche", "points": 0 }
     ]
   }
 }
