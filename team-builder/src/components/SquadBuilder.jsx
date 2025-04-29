@@ -3,7 +3,7 @@ import ShipCard from './ShipCard';
 import SquadSummary from './SquadSummary';
 import { encodeSquad, decodeSquad } from '../utils/encodeSquad';
 
-function SquadBuilder({ factionData, factionName, preloadedSquad = [] }) {
+function SquadBuilder({ factionData, factionName, preloadedSquad = [], showImport = true }) {
   const [squad, setSquad] = useState([]);
   const [selectedShipName, setSelectedShipName] = useState('');
   const [importedSquad, setImportedSquad] = useState(null);
@@ -75,25 +75,29 @@ function SquadBuilder({ factionData, factionName, preloadedSquad = [] }) {
         </div>
       )}
 
-      <div className="mt-4">
-        <input
-          type="text"
-          placeholder="Pega la URL aquí para importar el equipo"
-          id="importUrl"
-          className="form-control"
-        />
-        <button
-          className="btn btn-primary mt-2"
-          onClick={() => {
-            const url = document.getElementById('importUrl').value;
-            const params = new URLSearchParams(new URL(url).search);
-            const encodedData = params.get('data');
-            if (encodedData) handleImport(encodedData);
-          }}
-        >
-          Importar equipo
-        </button>
-      </div>
+{showImport && (
+  <div className="mt-4">
+    <input
+      type="text"
+      placeholder="Pega la URL aquí para importar el equipo"
+      id="importUrl"
+      className="form-control"
+    />
+    <button
+      className="btn btn-primary mt-2"
+      onClick={() => {
+        const url = document.getElementById('importUrl').value;
+        const params = new URLSearchParams(new URL(url).search);
+        const encodedData = params.get('data');
+        if (encodedData) {
+          handleImport(encodedData); // Importar el escuadrón desde la URL
+        }
+      }}
+    >
+      Importar equipo
+    </button>
+  </div>
+)}
     </div>
   );
 }

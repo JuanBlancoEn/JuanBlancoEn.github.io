@@ -49,6 +49,7 @@ function CreateTeamPage() {
               factionName={selectedFaction}
               factionData={factionsData[selectedFaction]}
               preloadedSquad={importedSquad}
+              showImport={false}
             />
           )}
         </div>

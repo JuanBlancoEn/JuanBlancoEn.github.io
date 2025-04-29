@@ -9,7 +9,6 @@ function SquadSummary({ squad }) {
       <h4>Resumen del escuadrón</h4>
 
       {squad.map((ship) => {
-        // Sumar puntos de mejoras (si existen)
         const upgradesPoints = ship.appliedUpgrades?.reduce(
           (sum, upgrade) => sum + (upgrade.points || 0), 0
         ) || 0;
@@ -19,23 +18,23 @@ function SquadSummary({ squad }) {
         return (
           <div key={ship.id} className="card mb-2 p-2">
             <h5>{ship.name} - {ship.pilot}</h5>
-            <p>
-              Coste base: {ship.basePoints} pts
+            <div>
+              <p>Coste base: {ship.basePoints} pts</p>
+
               {ship.appliedUpgrades?.length > 0 && (
-                <>
-                  <br />
-                  Mejoras equipadas:
-                  <ul>
+                <div>
+                  <strong>Mejoras equipadas:</strong>
+                  <ul className="mb-1">
                     {ship.appliedUpgrades.map((upgrade, idx) => (
                       <li key={idx}>{upgrade.name} (+{upgrade.points} pts)</li>
                     ))}
                   </ul>
-                  Puntos por mejoras: {upgradesPoints} pts
-                </>
+                  <p>Puntos por mejoras: {upgradesPoints} pts</p>
+                </div>
               )}
-              <br />
-              <strong>Total: {totalShipPoints} pts</strong>
-            </p>
+
+              <p><strong>Total: {totalShipPoints} pts</strong></p>
+            </div>
           </div>
         );
       })}
