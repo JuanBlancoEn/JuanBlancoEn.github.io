@@ -162,7 +162,15 @@
       { "name": "Coordinador de apuntado", "points": 4 },
       { "name": "Artillero", "points": 5 },
       { "name": "Finn", "points": 5 },
-      { "name": "Luke Skywalker", "points": 7 }
+      { "name": "Luke Skywalker", "points": 7 },
+      { "name": "El Niño", "points": 3 },
+      { "name": "El Mandaloriano I", "points": 4 },
+      { "name": "El Mandaloriano II", "points": 3 },
+      { "name": "IG-11", "points": 3 },
+      { "name": "Kuiil", "points": 5 },
+      { "name": "Migs Mayfeld", "points": 3 },
+      { "name": "Peli Motto", "points": 2 },
+      { "name": "Greef Karga", "points": 3 }
     ],
     "Mejora de sistemas": [
       { "name": "Detector de colisiones", "points": 0 },
@@ -279,7 +287,7 @@
       { "name": "Intrépido", "points": 2 },
       { "name": "IG-2000", "points": 0 },
       { "name": "Cazador de la Niebla", "points": 0 },
-      { "name": "Protector de Concord Dawn", "points": 1 },
+      { "name": "Protector de Concord Dawn", "points": 0 },
       { "name": "Vaksai", "points": 0 },
       { "name": "Brazo Ejecutor", "points": 1 },
       { "name": "Interceptor Scyk Ligero", "points": -2 },
@@ -291,7 +299,10 @@
       { "name": "Virago", "points": 1 },
       { "name": "Diente de Perro", "points": 6 },
       { "name": "Bola de Fuego de Kaz", "points": 1 },
-      { "name": "Hermana de la Noche", "points": 0 }
+      { "name": "Hermana de la Noche", "points": 0 },
+      { "name": "Desalmado", "points": 4 },
+      { "name": "Cimitarra", "points": 5 },
+      { "name": "Razor Crest", "points": 2 }
     ]
   }
 }

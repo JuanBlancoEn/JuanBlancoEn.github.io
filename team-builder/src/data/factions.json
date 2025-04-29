@@ -581,7 +581,8 @@
             { "name": "As de Concord Dawn", "basePoints": 23 },
             { "name": "Kad Solus", "basePoints": 25 },
             { "name": "Viejo Teroch", "basePoints": 26 },
-            { "name": "Fenn Rau", "basePoints": 28 }
+            { "name": "Fenn Rau", "basePoints": 28 },
+            { "name": "Joy Rekkoff", "basePoints": 26 }
           ]
         },
         {
@@ -690,6 +691,45 @@
             { "name": "Sicario del Sol Negro", "basePoints": 13 },
             { "name": "Kaa'to Leeachos", "basePoints": 15 },
             { "name": "N'Dru Suhlak", "basePoints": 17 }
+          ]
+        },
+        {
+          "name": "Belbullab-22",
+          "pilots": [
+            { "name": "General Grievous", "basePoints": 27 },
+            { "name": "Wat Tambor", "basePoints": 25 },
+            { "name": "As Skakoano", "basePoints": 23 },
+            { "name": "Capitán Sear", "basePoints": 22 },
+            { "name": "Piloto automático de Feethan Ottraw", "basePoints": 20 }
+          ]
+        },
+        {
+          "name": "Caza Guantelete",
+          "pilots": [
+            { "name": "Agente del colectivo Sombra", "basePoints": 27 },
+            { "name": "Guerrero de la Guardia de la Muerte", "basePoints": 28 },
+            { "name": "Pre Vizsla", "basePoints": 31 },
+            { "name": "Rook Kast", "basePoints": 31 },
+            { "name": "Bo-Katan Kryze", "basePoints": 28 },
+            { "name": "Maul", "basePoints": 37 }
+          ]
+        },
+        {
+          "name": "Infiltrador Sith",
+          "pilots": [
+            { "name": "Mensajero Oscuro", "basePoints": 23 },
+            { "name": "Q-66", "basePoints": 24 },
+            { "name": "Conde Dooku", "basePoints": 32 },
+            { "name": "Darth Maul", "basePoints": 34 }
+          ]
+        },
+        {
+          "name": "ST-70",
+          "pilots": [
+            { "name": "Sicario del Borde Exterior", "basePoints": 32 },
+            { "name": "Cazarrecompensas del Gremio", "basePoints": 34 },
+            { "name": "El Mandaloriano", "basePoints": 36 },
+            { "name": "Q9-O", "basePoints": 37 }
           ]
         }
       ]
