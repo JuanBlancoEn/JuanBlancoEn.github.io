@@ -64,7 +64,7 @@ function SquadBuilder({ factionData, factionName, preloadedSquad = [], showImpor
         </div>
       )}
 
-      <SquadSummary squad={squad} />
+    <SquadSummary squad={squad} setSquad={setSquad} />
 
       {squad.length > 0 && (
         <div className="mt-4">

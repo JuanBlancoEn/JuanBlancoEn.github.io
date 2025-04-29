@@ -1,8 +1,26 @@
 import React from 'react';
 
-function SquadSummary({ squad }) {
-  // Calcular puntos totales del escuadrón
+function SquadSummary({ squad, setSquad }) {
   const totalPoints = squad.reduce((sum, ship) => sum + (ship.points || 0), 0);
+
+  const removeUpgrade = (shipId, indexToRemove) => {
+    setSquad(prevSquad =>
+      prevSquad.map(ship => {
+        if (ship.id !== shipId) return ship;
+
+        const updatedUpgrades = [...(ship.appliedUpgrades || [])];
+        updatedUpgrades.splice(indexToRemove, 1);
+
+        const newPoints = ship.basePoints + updatedUpgrades.reduce((sum, upg) => sum + (upg.points || 0), 0);
+
+        return {
+          ...ship,
+          appliedUpgrades: updatedUpgrades,
+          points: newPoints
+        };
+      })
+    );
+  };
 
   return (
     <div className="mt-4">
@@ -24,9 +42,17 @@ function SquadSummary({ squad }) {
               {ship.appliedUpgrades?.length > 0 && (
                 <div>
                   <strong>Mejoras equipadas:</strong>
-                  <ul className="mb-1">
+                  <ul className="list-unstyled">
                     {ship.appliedUpgrades.map((upgrade, idx) => (
-                      <li key={idx}>{upgrade.name} (+{upgrade.points} pts)</li>
+                      <li key={idx} className="d-flex justify-content-between align-items-center">
+                        <span>{upgrade.name} (+{upgrade.points} pts)</span>
+                        <button
+                          className="btn btn-sm btn-outline-danger ms-2"
+                          onClick={() => removeUpgrade(ship.id, idx)}
+                        >
+                          ✕
+                        </button>
+                      </li>
                     ))}
                   </ul>
                   <p>Puntos por mejoras: {upgradesPoints} pts</p>

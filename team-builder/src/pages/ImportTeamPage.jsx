@@ -42,7 +42,7 @@ function ImportTeamPage() {
             className="form-control"
           />
           <button
-            className="btn btn-primary mt-2"
+            className="btn btn-success mt-2"
             onClick={() => {
               const url = document.getElementById('importUrlInput').value;
               try {
