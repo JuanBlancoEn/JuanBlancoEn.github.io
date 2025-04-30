@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function HomePage() {
   return (
     <div className="d-flex justify-content-center align-items-center background" style={{ minHeight: '100vh' }}>
-      <div className="container-fluid p-4 rounded shadow" style={{ maxWidth: '1000px' }}>
+      <div className="container-fluid p-4 rounded shadow">
         <div className="text-center">
           <h1 className="mb-4">Bienvenido al Builder de Escuadrones X-Wing</h1>
           <p className="lead">Crea y comparte tus escuadrones de una forma rápida y sencilla</p>

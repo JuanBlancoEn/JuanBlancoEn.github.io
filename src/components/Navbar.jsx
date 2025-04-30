@@ -6,7 +6,7 @@ import logo from '/r2d2logo.jpeg';
 function Navbar() {
   return (
     <nav className="navbar navbar-bg sticky-top">
-      <div className="container-fluid d-flex justify-content-between align-items-center">
+      <div className="container-fluid d-flex justify-content-between align-items-center flex-wrap">
         <Link to="/" className="navbar-brand">
         <img
           src={logo}
@@ -21,7 +21,7 @@ function Navbar() {
         />
         </Link>
 
-        <div className="d-flex gap-3">
+        <div className="d-flex flex-wrap justify-content-center gap-2">
           <Link to="/" className="nav-btn text-white">Inicio</Link>
           <Link to="/create" className="nav-btn text-white">Crear Equipo</Link>
           <Link to="/import" className="nav-btn text-white">Importar Equipo</Link>

@@ -22,6 +22,10 @@ function SquadSummary({ squad, setSquad }) {
     );
   };
 
+  const removeShip = (shipId) => {
+    setSquad(prevSquad => prevSquad.filter(ship => ship.id !== shipId));
+  };
+
   return (
     <div className="mt-4">
       <h4>Resumen del escuadrón</h4>
@@ -34,8 +38,24 @@ function SquadSummary({ squad, setSquad }) {
         const totalShipPoints = ship.basePoints + upgradesPoints;
 
         return (
-          <div key={ship.id} className="card mb-2 p-2">
-            <h5>{ship.name} - {ship.pilot}</h5>
+          <div key={ship.id} className="card mb-2 p-2 position-relative " style={{ paddingRight: '3rem' }}>
+            {/* Botón para eliminar nave */}
+            <button
+              className="btn-close position-absolute end-0 top-0 m-2"
+              aria-label="Eliminar nave"
+              onClick={() => removeShip(ship.id)}
+            ></button>
+
+                <div className="d-flex justify-content-between align-items-start">
+                  <h5 className="me-2" style={{ wordBreak: 'break-word', flex: 1 }}>
+                    {ship.name} - {ship.pilot}
+                  </h5>
+                  <button
+                    className="btn-close"
+                    aria-label="Eliminar nave"
+                    onClick={() => removeShip(ship.id)}
+                  ></button>
+                </div>
             <div>
               <p>Coste base: {ship.basePoints} pts</p>
 
