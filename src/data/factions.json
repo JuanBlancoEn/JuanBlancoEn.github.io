@@ -273,10 +273,7 @@
       "pilots": [
           { "name": "Corran Horn", "basePoints": 27 },
           { "name": "Keo Venzee", "basePoints": 21 },
-          { "name": "Pops Krail", "basePoints": 21 },
-          { "name": "Juno Eclipse", "basePoints": 26 },
-          { "name": "Segunda Hermana", "basePoints": 25 },
-          { "name": "Yrica Quell", "basePoints": 14 }
+          { "name": "Pops Krail", "basePoints": 21 }
         ]
       }
       ]
